@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Tuyển dụng</title>
     <link rel="shortcut icon" href="~/Content/Images/logo_so.png">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">    
+            @Styles.Render("~/Content/css")
+            @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -104,7 +104,7 @@
                 <img src="http://placehold.it/50/30a5ff/fff" class="img-responsive" alt="">
             </div>
             <div class="profile-usertitle">
-                <div class="profile-usertitle-name">Thành</div>
+                <div class="profile-usertitle-name">Truong huu Thành</div>
                 <div class="profile-usertitle-status"><span class="indicator label-success"></span>Online</div>
             </div>
             <div class="clear"></div>
@@ -153,7 +153,7 @@
             <div class="clear"></div>
         </div>
         <div class="divider"></div>
-       
+
         <ul class="nav menu">
             <li class="active"><a href="index.html"><em class="fa fa-dashboard">&nbsp;</em> Dashboard</a></li>
             <li><a href="/quanlytaikhoan"><em class="fa fa-users">&nbsp;</em> Tài Khoản</a></li>
@@ -187,7 +187,23 @@
                             <span class="fa fa-print">&nbsp;</span> Mã Đăng Kí
                         </a>
                     </li>
+                    <li>
+                        <a class="" href="/tuyendung/madangki">
+                            <span class="fa fa-print">&nbsp;</span> Chỉ Tiêu
+                        </a>
+                    </li>
 
+                    <li>
+                        <a class="" href="/tuyendung/madangki">
+                            <span class="fa fa-print">&nbsp;</span> Kế Hoạch Xét Tuyển
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="" href="/tuyendung/madangki">
+                            <span class="fa fa-bullhorn">&nbsp;</span> Thông Báo
+                        </a>
+                    </li>
                 </ul>
             </li>
             <li class="parent">
@@ -210,18 +226,23 @@
                             <span class="fa fa-arrow-right">&nbsp;</span> Sub Item 3
                         </a>
                     </li>
+                    <li>
+                        <a class="" href="/tuyendung/madangki">
+                            <span class="fa fa-bullhorn">&nbsp;</span> Thông Báo
+                        </a>
+                    </li>
                 </ul>
             </li>
             <li><a href="login.html"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
         </ul>
     </div><!--/.sidebar-->
-
-    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
-        @RenderBody()      
-    </div>
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+        @RenderBody()
+    </div>
+
+
 </body>
 </html>

@@ -112,7 +112,7 @@
         <span class="pull-right panel-toggle panel-button-tab-left"><em class="fa fa-download fa-xl color-orange"></em></span>
     </div>
     <div class="panel-body table-responsive">
-        <table class="table table-condensed">
+        <table class="table table-condensed" id="danhsachhoanthanh">
             <thead>
                 <tr>
                     <th>#</th>
@@ -148,5 +148,10 @@
         </table>
     </div>
 </div>
+<script>
+    $(document).ready(function () {
+        $('#danhsachhoanthanh').DataTable();
+    });
+</script>
 
 

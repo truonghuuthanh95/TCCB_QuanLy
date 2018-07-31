@@ -3,7 +3,6 @@
     ViewBag.Title = "Nguyện Vọng Trường";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 <div class="row">
     <ol class="breadcrumb">
         <li>
@@ -31,7 +30,7 @@
                     <li>
                         <ul class="dropdown-settings">
                             <li>
-                                <a href="#">
+                                <a href="/tuyendung/nguyenvongtruong/capnhat">
                                     <em class="fa fa-cog"></em> Cập nhật
                                 </a>
                             </li>
@@ -42,7 +41,7 @@
         </ul>
     </div>
     <div class="panel-body table-responsive">
-        <table class="table table-condensed">
+        <table class="table table-condensed" id="testTable">
             <thead>
                 <tr>
                     <th>#</th>
@@ -66,10 +65,16 @@
                 </tr>
                 <tr>
                     <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
+                    <td>Larry the Bird</td>
                     <td>twitter</td>
+                    <td>Larry the Bird</td>
                 </tr>
             </tbody>
         </table>
     </div>
 </div>
+<script>
+    $(document).ready(function () {
+        $('#testTable').DataTable();
+    });
+</script>

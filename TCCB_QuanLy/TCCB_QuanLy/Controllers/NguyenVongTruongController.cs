@@ -16,5 +16,11 @@ namespace TCCB_QuanLy.Controllers
         {
             return View();
         }
+        [Route("nguyenvongtruong/capnhat")]
+        [HttpGet]
+        public ActionResult CapNhatNguyenVongTruong()
+        {
+            return View();
+        }
     }
 }

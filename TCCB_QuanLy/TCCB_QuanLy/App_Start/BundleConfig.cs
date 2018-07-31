@@ -23,7 +23,9 @@ namespace TCCB_QuanLy
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js",
                       "~/Scripts/bootstrap-datepicker.js",
-                      "~/Scripts/custom.js"
+                      "~/Scripts/custom.js",
+                      "~/Scripts/dataTables.min.js",
+                      "~/Scripts/dataTables.bootstrap.min.js"
                       ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
@@ -31,7 +33,8 @@ namespace TCCB_QuanLy
                       "~/Content/site.css",
                       "~/Content/font-awesome.min.css",
                       "~/Content/datepicker3.css",
-                      "~/Content/styles.css"
+                      "~/Content/styles.css",
+                      "~/Content/dataTables.min.css"
                       ));
         }
     }

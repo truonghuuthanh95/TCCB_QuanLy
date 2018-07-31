@@ -11,7 +11,14 @@ namespace TCCB_QuanLy.Controllers
     {
         // GET: MonDuTuyen
         [Route("mondutuyen")]
+        [HttpGet]
         public ActionResult MonDuTuyen()
+        {
+            return View();
+        }
+        [Route("mondutuyen/capnhat")]
+        [HttpGet]
+        public ActionResult CapNhatMonDuTuyen()
         {
             return View();
         }
